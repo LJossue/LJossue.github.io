@@ -285,7 +285,7 @@ header.sticky {
 }
 .Portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
@@ -295,7 +295,6 @@ header.sticky {
   width: 100%;
   border-radius: 28px;
   margin-bottom: 1.4rem;
-  height: 220px;
 }
 .row {
   background: #2d343f;
@@ -303,9 +302,9 @@ header.sticky {
   border: 1px solid transparent;
   box-shadow: 0 0 5px var(--main-color);
   padding: 20px;
-  height: 480px;
+  height: auto;
   transition: all 0.5s ease;
-  
+  max-width: 5500px;
 }
 .main-row {
   display: flex;
