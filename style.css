@@ -285,16 +285,10 @@ header.sticky {
 }
 .Portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
-}
-.row img {
-  height: auto;
-  width: 100%;
-  border-radius: 28px;
-  margin-bottom: 1.4rem;
 }
 .row {
   background: #2d343f;
@@ -302,10 +296,23 @@ header.sticky {
   border: 1px solid transparent;
   box-shadow: 0 0 5px var(--main-color);
   padding: 20px;
-  height: auto;
+  height: 35rem;
+  width: 37rem;
+  margin: auto;
   transition: all 0.5s ease;
-  max-width: 5500px;
 }
+.row img {
+  display: flex;
+  width: 35rem;
+  height: 60%;
+  max-width: 100%;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
+  margin-left: 0;
+  margin-right: 0;
+  object-fit: cover;
+}
+
 .main-row {
   display: flex;
   align-items: center;
@@ -445,6 +452,10 @@ form .send-btn:hover {
     height: 90vh;
     background-position: center;
   }
+  .row {
+    height: 30rem;
+    width: auto;
+  }
 }
 @media (max-width: 1290px) {
   .box {
@@ -458,6 +469,9 @@ form .send-btn:hover {
   .box h3 {
     font-size: 21px;
     margin-top: 30px;
+  }
+  .row {
+    height: 35rem;
   }
 }
 @media (max-width: 1240px) {
@@ -479,6 +493,9 @@ form .send-btn:hover {
     --h1-font: 3.7rem;
     --h2-font: 2.2rem;
     --p-font: 1rem;
+  }
+  .row {
+    height: 35rem;
   }
 }
 @media (max-width: 950px) {
@@ -510,10 +527,16 @@ form .send-btn:hover {
   .navlist.activate {
     right: 0;
   }
+  .row {
+    height: 35rem;
+  }
 }
 @media (max-width: 680px) {
   .main-content p {
     width: 100%;
+  }
+  .row {
+    height: 42rem;
   }
 }
 @media (max-width: 470px) {
@@ -529,5 +552,8 @@ form .send-btn:hover {
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
+  }
+  .row {
+    height: 35rem;
   }
 }
