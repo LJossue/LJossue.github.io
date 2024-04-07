@@ -285,7 +285,8 @@ header.sticky {
 }
 .Portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: auto auto;
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
@@ -297,7 +298,7 @@ header.sticky {
   box-shadow: 0 0 5px var(--main-color);
   padding: 20px;
   height: 35rem;
-  width: 37rem;
+  width: auto;
   margin: auto;
   transition: all 0.5s ease;
 }
@@ -503,8 +504,8 @@ form .send-btn:hover {
     --h2-font: 2.2rem;
     --p-font: 1rem;
   }
-  .row {
-    height: 35rem;
+  .Portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
 @media (max-width: 950px) {
@@ -538,6 +539,9 @@ form .send-btn:hover {
   }
   .row {
     height: 35rem;
+  }
+  .Portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 @media (max-width: 680px) {
